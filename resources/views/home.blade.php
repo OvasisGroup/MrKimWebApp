@@ -71,7 +71,7 @@
               <div>
               <img src="{{ asset('images/SVG/handwash.svg') }}" width="60px">
               <h1>Get Cleaning Services from our Trusted Team at the the MOST favorable Rates</h1>
-              <p>Get Quotation</p>
+              <a href=""><p>Get Quotation</p></a>
 </div>
             </div>
             <div class="rightwing"></div>

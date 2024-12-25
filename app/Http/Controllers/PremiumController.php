@@ -9,7 +9,8 @@ class PremiumController extends Controller
 {
     public function premium()
     {
-        $premium = Premium::all();
-        return view('premium', compact('premium'));
+        // $prem = Premium::all();
+        // return view('premium', compact('prem'));
+        return response()->json(['message' => 'Premium route is working']);
     }
 }

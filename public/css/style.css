@@ -2,16 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url("//fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.bunny.net/css?family=albert-sans:100,200,300,400,500,600,700,800");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
-  
+  font-family: 'Albert Sans', sans-serif;
 }
 
 p{
@@ -47,10 +45,27 @@ p{
   color: green;
 }
 
+.section-contacts{
+  margin-top: 10rem;
+}
+
+.posta{
+  border: none;
+}
+
 .image_section {
   background-color: green;
   height: 100%;
   background-image: url("../images/other/gardening.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pichacontacts{
+  background-color: green;
+  height: 100%;
+  background-image: url("../images/gardening.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4675,10 +4690,45 @@ card p {
   font-size: .9rem;
 }
 
+.alert-success{
+  background-color: lightgreen;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  width: 100%;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.alert-danger{
+  background-color: lightcoral;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  width: 100%;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
 .cadi {
   background-color: #f2f7f2;
-  padding: 2rem;
-  border-radius: 2rem;
+  padding: 1rem;
+  border-radius: .5rem;
 }
 
 .cadi img {
@@ -5021,6 +5071,22 @@ select {
   background-color: darkgreen;
 }
 
+.login-form label{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.inputa{
+  width: 6% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px !important;
+}
+
 .logna{
   display: flex;
   flex-direction: column;
@@ -5121,3 +5187,171 @@ select {
 .login-form input{
   border: 1px solid green;
 }
+
+.ppp{
+  margin-top: 2rem;
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.formgroup{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: .75rem;
+}
+
+.formgroup input{
+  width: 100%;
+  padding: .75rem;
+  border-radius: .25rem;
+  border: 1px solid green;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.masaga{
+  width: 100%;
+  padding: .75rem;
+  border-radius: .25rem;
+  border: 1px solid green;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.ppp form button{
+  width: 100%;
+  padding: .75rem;
+  border: none;
+  background-color: green;
+  color: yellow;
+  font-weight: 600;
+  border-radius: .25rem;
+}
+
+.ppp form button:hover{
+  background-color: darkgreen;
+  color: yellow;
+}
+
+.ppp p{
+  margin: 1rem 0rem;
+}
+
+.ppp .pppp{
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ppph{
+  font-size: 2rem;
+  font-weight: 700;
+  color: green;
+}
+
+.section-contact{
+  margin-top: 2rem;
+}
+
+.lwet{
+  margin-top: -2rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.lwet img{
+  background-color: white;
+  border-radius: 50%;
+  padding: 1rem;
+  width: 80px;
+}
+
+.profile-save{
+  background-color: green;
+}
+
+.choose-role{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    background-image: url("../images/bag.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.logoforchoose{
+  margin-bottom: 2rem;
+}
+
+.main-role h1{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.employer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.employer div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid green;
+  padding: 1.5rem 3rem;
+  border-radius: .5rem;
+  font-weight: 700;
+  color: green;
+  background-color: white;
+}
+
+.employer div p{
+  font-weight: 300;
+}
+
+.employer div:hover{
+  background-color: lightgreen;
+}
+
+.login-link{
+  color: green;
+  font-weight: 700;
+}
+
+.postform{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-bg{
+  background-image: url("../images/bag.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: red;
+}
+

@@ -48,16 +48,16 @@ to help. You Name it! We do it!</p>
             <h4>Mr.KIM ... You Name It! We Do It!</h4>
             <ul>
               <li>
-                <a href="{{ route('about') }}"><p>About Us</p></a>
+                <a href=""><p>About Us</p></a>
               </li>
               <li>
-                <a href="{{ route('whoweare') }}"><p>Who We Are</p></a>
+                <a href=""><p>Who We Are</p></a>
               </li>
               <li>
-                <a href="{{ route('corevalues') }}"><p>Our Core Values</p></a>
+                <a href=""><p>Our Core Values</p></a>
               </li>
               <li>
-                <a href="{{ route('corporateresponsibilities') }}"><p>Corporate Responsibility</p></a>
+                <a href=""><p>Corporate Responsibility</p></a>
               </li>
                  
             </ul>
@@ -66,39 +66,39 @@ to help. You Name it! We do it!</p>
             <h4>Customers</h4>
             <ul>
               <li>
-                <a href="{{ route('howitworks') }}"><p>How It Works</p></a>
+                <a href=""><p>How It Works</p></a>
               </li>
               <li>
-                <a href="/getapp"><p>Get The App</p></a>
+                <a href=""><p>Get The App</p></a>
               </li>
               <li>
-                <a href="{{ route('whychooseus') }}"><p>Why choose Mr. Kim</p></a>
+                <a href=""><p>Why choose Mr. Kim</p></a>
               </li>
             </ul>
           </div>
           <div class='spotsthree'>
             <h4>Resources</h4>
             <ul>
-              <li>
+              <!-- <li>
                 <a href="/financing"><p>Financing My Project</p></a>
               </li>
               <li>
                 <a href="/solution"><p>Solution Center & Expert Tips</p></a>
-              </li>
+              </li> -->
              
-              <li>
+              <!-- <li>
                 <a href="/signup"><p>Sign Up As Pro</p></a>
+              </li> -->
+              <li>
+                <a href=""><p>Legal</p></a>
               </li>
               <li>
-                <a href="/legal"><p>Legal</p></a>
-              </li>
-              <li>
-                <a href="/safety"><p>Safety</p></a>
+                <a href=""><p>Safety</p></a>
               </li>
 
               
               <li>
-                <a href="/faq"><p>FAQs</p></a>
+                <a href=""><p>FAQs</p></a>
               </li>
             </ul>
           </div>
@@ -106,11 +106,11 @@ to help. You Name it! We do it!</p>
             <h4>Support</h4>
             <ul>
               <li>
-                <a href="/help"><p>Help</p></a>
+                <a href=""><p>Help</p></a>
               </li>
               
               <li>
-                <a href="/contacts"><p>Contact Us</p></a>
+                <a href=""><p>Contact Us</p></a>
               </li>
             </ul>
           </div>

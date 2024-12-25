@@ -1,8 +1,8 @@
 @include('layouts.header')
 
 <main>
-@if (session('success'))
-    <div class="py-2 text-center text-white bg-green-500">
+    @if (session('success'))
+    <div class="alert alert-success">
         {{ session('success') }}
     </div>
 @endif
