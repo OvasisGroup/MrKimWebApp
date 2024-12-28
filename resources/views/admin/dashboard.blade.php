@@ -9,6 +9,19 @@
         <!-- Page Content-->
         <div class="page-content">
             <div class="container-xxl">
+                <div class="col-12">                    
+                    <div class="card marieta"> 
+                        <div class="card-bodyl"> 
+                            <div class="rows"> 
+                                <img src="{{ asset('images/hand-cleaning-one.png') }}" alt="" class="rou">
+                                <div><h3>Commercial & Residential
+                                   <br> <span class="clanim">Cleaning Services You Can Trust</span></h3>
+                                   <button type="button" class="btn btn-primary">Get Cleaning Estimate</button>
+                                    </div>
+                            </div><!--end row-->               
+                        </div><!--end card-body--> 
+                    </div><!--end card--> 
+                </div> <!--end col-->  
                 <div class="row justify-content-center">
                     <div class="col-md-6 col-lg-4">
                         <div class="card">

@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class JobsController extends Controller
 {
-    public function jobs()
+    public function index()
     {
-        return view('jobs');
+        return view('admin.jobs');
     }
 }

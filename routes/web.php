@@ -22,11 +22,15 @@ use App\Http\Controllers\JobseekerController;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\Auth\RegisterdUserController;
 use App\Http\Middleware\RedirectToChooseRole;
+use App\Http\Controllers\JobsController;
+use App\Http\Controllers\CleaningController;
+use App\Http\Controllers\EstimatesController;
 
 
 
 Route::get('/admin/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('admin.dashboard');
 Route::get('/admin/profile', [ProfileController::class, 'index'])->middleware(['auth', 'verified'])->name('admin.profile');
+Route::get('/admin/jobs', [JobsController::class, 'index'])->middleware(['auth', 'verified'])->name('admin.jobs');
 
 Route::middleware('auth', 'verified')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -57,3 +61,6 @@ Route::get('/whoweare', [WhoweareController::class, 'whoweare'])->name('whoweare
 Route::get('/whychooseus',[WhychooseController::class, 'whychooseus'])->name('whychooseus');
 Route::get('/category',[CategoryController::class, 'category'])->name('category');
 Route::get('/premium',[PremiumController::class, 'premium'])->name('premium');
+
+Route::get('/cleaning',[CleaningController::class, 'index'])->name('index');
+Route::get('/cleaning/estimates',[EstimatesController::class, 'index'])->name('cleaning.estimates');

@@ -43,21 +43,21 @@
                 <nav class="menu">
                     <ul class="menu-bar">
                         <div class="plus">
-                            <a href="{{ route('estimates.index') }}">Request a Quotation <img src="{{ asset('images/plus2.svg') }}" width="10px"
+                            <a href="">Request a Quotation <img src="{{ asset('images/plus2.svg') }}" width="10px"
                                     alt="Plus" priority class="imageplus" /></a>
                         </div>
-                        <li><a class="nav-link" href="{{ route('home') }}">Home</a></li>
-                        <li><a class="nav-link" href="{{ route('jobs') }}">Residential Cleaning</a></li>
-                        <li><a class="nav-link" href="{{ route('category') }}">Commercial Cleaning</a></li>
-                        <li><a class="nav-link" href="{{ route('talent') }}">Our Promise</a></li>
+                        <li><a class="nav-link" href="">Home</a></li>
+                        <li><a class="nav-link" href="">Residential Cleaning</a></li>
+                        <li><a class="nav-link" href="">Commercial Cleaning</a></li>
+                        <li><a class="nav-link" href="">Our Promise</a></li>
                         {{-- <li><a class="nav-link" href="{{ route('premiums') }}">Premium</a></li> --}}
                     </ul>
                     <ul class="dropdown">
                         dropdown
-                        <li><a class="nav-link" href="{{ route('home') }}">Home</a></li>
-                        <li><a class="nav-link" href="{{ route('jobs') }}">Residential Cleaning</a></li>
-                        <li><a class="nav-link" href="{{ route('category') }}">Commercial Cleaning</a></li>
-                        <li><a class="nav-link" href="{{ route('talent') }}">Our Promise</a></li>
+                        <li><a class="nav-link" href="">Home</a></li>
+                        <li><a class="nav-link" href="">Residential Cleaning</a></li>
+                        <li><a class="nav-link" href="">Commercial Cleaning</a></li>
+                        <li><a class="nav-link" href="">Our Promise</a></li>
                     </ul>
                 </nav>
             </div>
