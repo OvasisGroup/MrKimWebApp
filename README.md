@@ -1,4 +1,4 @@
-![Banner](https://github.com/OvasisGroup/OvasisGroup/blob/main/assets/ovagroup.jpg)
+![Banner]([https://github.com/OvasisGroup/OvasisGroup/blob/main/assets/ovagroup.jpg](https://github.com/OvasisGroup/MrKimWebApp/blob/main/public/images/gitbadge.jpg))
 
 
 <p align="center">
