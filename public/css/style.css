@@ -3067,6 +3067,7 @@ svg {
 .diduknow img {
   margin-bottom: 3rem;
   margin-top: -5rem;
+  z-index: 1000;
 }
 
 .diduknow p {
@@ -3076,7 +3077,8 @@ svg {
 
 .little {
   background-color: green;
-  margin-top: 7rem;
+  /* margin-top: 7rem; */
+  z-index: 100;
 }
 
 .elite {
@@ -5190,9 +5192,22 @@ select {
 
 .ppp{
   margin-top: 2rem;
-  max-width: 50%;
+  max-width: 70%;
   margin: 0 auto;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .ppp{
+    margin-top: 2rem;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.ppph{
+  font-size: 3rem;
 }
 
 .formgroup{
@@ -5258,6 +5273,7 @@ select {
 
 .section-contact{
   margin-top: 2rem;
+  margin: 0 auto;
 }
 
 .lwet{
@@ -5353,5 +5369,82 @@ select {
   background-position: center center;
   background-repeat: no-repeat;
   background-color: red;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+#location-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.amalga{
+  margin-top: 4rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.commitment{
+  display: flex;
+  gap: 2rem;
+  text-align: left;
+}
+
+.comitment{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .comitment{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+}
+
+.post h2{
+  text-align: center;
+  color: green;
+}
+
+.post p{
+  text-align: center;
+}
+
+.post img{
+  margin-bottom: 1rem;
+}
+
+.button-contact{
+  background-color: green;
+  border: none;
+  padding: .75rem 2rem;
+  color: yellow;
+  font-weight: 600;
+  border-radius: .25rem;
+  margin-bottom: 3rem;
+}
+
+.button-contact:hover{
+  background-color: darkgreen;
+  color: yellow;
+}
+
+/* 
+.post{
+  background-color: lightgray;
+} */
+
+.amalga{
+  margin-top: 4rem;
+  max-width: 90%;
+  margin: 0 auto;
 }
 

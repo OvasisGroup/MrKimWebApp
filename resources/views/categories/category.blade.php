@@ -24,11 +24,12 @@
         <!-- {% for category in categories %} -->
         @foreach ($values as $lege)
             <div class="cadi">
-                <a href="">
-                <div style="background-image: url({{ asset($lege->image) }}); background-size: cover; background-position: center; height: 250px; border-radius: .5rem;" class=""></div>
+                <a href="{{ route('categories.show', $lege) }}">
+                <div style="background-image: url({{ asset($lege->image) }}); background-size: cover; background-position: center; margin-top: 2rem; height: 300px; border-radius: .5rem;" class=""></div>
                 <div class="rowa">
                     <h3>{{ $lege->name }}</h3>   
-                <a href=""><button>View Details</button></a>
+                {{-- <a href=""><button>View Details</button></a> --}}
+                <a href="{{ route('categories.show', $lege) }}"><button>View Details</button></a>
                 </div>
             </a>
             </div>
@@ -45,7 +46,7 @@
         <div style="background-image: url({{ asset('images/cleaner.jpg')}}); background-size: cover; background-position: center; height: 250px; border-radius: .5rem;" class=""></div>
         <div class="rowa">
                     <h3>Cleaning Services</h3>
-                <a href="{{ route('cleaning.index') }}"><button>View Services</button></a>
+                <a href=""><button>View Services</button></a>
                 </div>
     </div>
 </section>

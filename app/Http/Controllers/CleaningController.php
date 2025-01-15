@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\OurCommitement;
 use Illuminate\Http\Request;
 
 class CleaningController extends Controller
@@ -11,7 +12,7 @@ class CleaningController extends Controller
      */
     public function index()
     {
-        return view('cleaning.index');
+        return view('cleaning.home');
     }
 
     /**

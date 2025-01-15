@@ -9,7 +9,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $values = Category::orderBy('id', 'asc')->get();
+        $values = Category::with('children')->whereNull('parent_id')->get();
         return view('home', ['values' => $values]);
     }
 

@@ -54,7 +54,7 @@
                <!-- Set up your HTML -->
                <div  class="sliderkings slick-slider">
                @foreach ($values as $lege)
-                <a href="">
+                <a href=" {{ route('categories.show', $lege) }}">
                 <div style="background-image: url({{ asset($lege->image) }}); background-size: cover; background-position: center; height: 200px; display: flex; gap: 1rem; margin: .5rem;" class="category_list">
                   <div class="single_list">{{ $lege->name }}</div>
                 </div>

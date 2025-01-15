@@ -72,13 +72,9 @@
                     </form>
 
                     @auth
-                    <form method="POST" action="{{ route('logout') }}">
-                        @csrf
-                        <button type="submit" class="btn-login">Logout</button>
-                    </form>
+                        <button type="submit" class="btn-login"><a href="{{ route('admin.dashboard') }}">My Dashboard</a></button>
                     @else
-                    <button class="btn-login" type="submit"><a href="{{ route('login') }}">Get Started</a></button>
-                        
+                        <button class="btn-login" type="submit"><a href="{{ route('login') }}">Get Started</a></button>
                     @endauth
                     
                 </div>

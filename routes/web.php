@@ -25,6 +25,10 @@ use App\Http\Middleware\RedirectToChooseRole;
 use App\Http\Controllers\JobsController;
 use App\Http\Controllers\CleaningController;
 use App\Http\Controllers\EstimatesController;
+use App\Livewire\MultistepForm;
+use App\Http\Controllers\MultiStepFormController;
+use App\Http\Controllers\CommercialController;
+use App\Http\Controllers\ResidentialController;
 
 
 
@@ -60,7 +64,23 @@ Route::get('/about', [AboutController::class, 'about'])->name('about');
 Route::get('/whoweare', [WhoweareController::class, 'whoweare'])->name('whoweare');
 Route::get('/whychooseus',[WhychooseController::class, 'whychooseus'])->name('whychooseus');
 Route::get('/category',[CategoryController::class, 'category'])->name('category');
+Route::get('/categories/{category}', [CategoryController::class, 'show'])->name('categories.show');
 Route::get('/premium',[PremiumController::class, 'premium'])->name('premium');
 
-Route::get('/cleaning',[CleaningController::class, 'index'])->name('index');
+Route::get('/cleaning/home',[CleaningController::class, 'index'])->name('index');
 Route::get('/cleaning/estimates',[EstimatesController::class, 'index'])->name('cleaning.estimates');
+Route::get('/cleaning/commercial',[CommercialController::class, 'index'])->name('cleaning.commercial');
+Route::get('/cleaning/residential',[ResidentialController::class, 'index'])->name('cleaning.residential');
+
+// multistep form
+Route::get('/cleaning/step-one', [MultiStepFormController::class, 'stepOne'])->name('step.one');
+Route::post('/cleaning/step-one', [MultiStepFormController::class, 'postStepOne'])->name('post.step.one');
+
+Route::get('/cleaning/step-two', [MultiStepFormController::class, 'stepTwo'])->name('step.two');
+Route::post('/cleaning/step-two', [MultiStepFormController::class, 'postStepTwo'])->name('post.step.two');
+
+Route::get('/cleaning/step-three', [MultiStepFormController::class, 'stepThree'])->name('step.three');
+Route::post('/cleaning/step-three', [MultiStepFormController::class, 'postStepThree'])->name('post.step.three');
+
+Route::get('/cleaning/confirm', [MultiStepFormController::class, 'confirm'])->name('confirm');
+Route::post('/cleaning/submit', [MultiStepFormController::class, 'submit'])->name('submit');

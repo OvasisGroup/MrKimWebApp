@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\OurCommitment;
 
 class EstimatesController extends Controller
 {
@@ -11,7 +12,8 @@ class EstimatesController extends Controller
      */
     public function index()
     {
-        return view('cleaning.estimates');
+        $commit = OurCommitment::orderBy('id', 'asc')->get();
+        return view('cleaning.estimates', ['commit' => $commit]);
     }
 
     /**

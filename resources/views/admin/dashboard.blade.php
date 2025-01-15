@@ -201,49 +201,21 @@
                                     <table class="table mb-0">
                                         <thead class="table-light">
                                             <tr>
-                                                <th class="border-top-0">Browser</th>
-                                                <th class="border-top-0">Sessions</th>
-                                                <th class="border-top-0">Bounce Rate</th>
-                                                <th class="border-top-0">Transactions</th>
+                                                <th class="border-top-0">Major Category</th>
+                                                <th class="border-top-0">Action</th>
+                             
                                             </tr>
                                             <!--end tr-->
                                         </thead>
                                         <tbody>
+                                            @foreach ($category as $categories)
                                             <tr>
-                                                <td><img src="{{ asset('assets/images/logos/chrome.png') }}" alt height="24" class="me-2">Chrome</td>
-                                                <td>10853<small class="text-muted">(52%)</small></td>
-                                                <td> 52.80%</td>
-                                                <td>566<small class="text-muted">(92%)</small></td>
+                                                <td>{{ $categories->name }}</td>
+                                                <td><a href=""{{ route('categories.show', $categories) }}">View Details</a></td>
                                             </tr>
+                                            @endforeach
                                             <!--end tr-->
-                                            <tr>
-                                                <td><img src="{{ asset('assets/images/logos/micro-edge.png') }}" alt height="24" class="me-2">Microsoft
-                                                    Edge</td>
-                                                <td>2545<small class="text-muted">(47%)</small></td>
-                                                <td> 47.54%</td>
-                                                <td>498<small class="text-muted">(81%)</small></td>
-                                            </tr>
-                                            <!--end tr-->
-                                            <tr>
-                                                <td><img src="{{ asset('assets/images/logos/in-explorer.png') }}" alt height="24" class="me-2">Internet-Explorer</td>
-                                                <td>1836<small class="text-muted">(38%)</small></td>
-                                                <td> 41.12%</td>
-                                                <td>455<small class="text-muted">(74%)</small></td>
-                                            </tr>
-                                            <!--end tr-->
-                                            <tr>
-                                                <td><img src="{{ asset('assets/images/logos/opera.png') }}" alt height="24" class="me-2">Opera</td>
-                                                <td>1958<small class="text-muted">(31%)</small></td>
-                                                <td> 36.82%</td>
-                                                <td>361<small class="text-muted">(61%)</small></td>
-                                            </tr>
-                                            <!--end tr-->
-                                            <tr>
-                                                <td><img src="{{ asset('assets/images/logos/chrome.png') }}" alt height="24" class="me-2">Chrome</td>
-                                                <td>10853<small class="text-muted">(52%)</small></td>
-                                                <td> 52.80%</td>
-                                                <td>566<small class="text-muted">(92%)</small></td>
-                                            </tr>
+                                           
                                             <!--end tr-->
                                         </tbody>
                                     </table>
@@ -523,5 +495,5 @@
             </div>
             <!--end Rightbar/offcanvas-->
             <!--end Rightbar-->
-          
+            
 @endsection
